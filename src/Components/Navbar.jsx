@@ -103,32 +103,32 @@ export default function Navbar() {
 
             }
 
-                <motion.div className='navbar'
-                    layout
-                    transition={{ layout: { duration: .4 } }}
-                    style={{
-                        width: isOpen && "100%"
-                    }}
-                >
+            <motion.div className='navbar'
+                layout
+                transition={{ layout: { duration: .4 } }}
+                style={{
+                    width: isOpen && "100%"
+                }}
+            >
 
-                    <div className='logo'>
-                        <p>soyjackcoin</p>
-                    </div>
+                <div className='logo'>
+                    <p>soyjackcoin</p>
+                </div>
 
-                    <div className='menu'>
-                        <ul>
-                            <li>Community</li>
-                            <li>How to buy ?</li>
-                            <li>Tokenomics</li>
-                            <li>Airdrop</li>
-                        </ul>
-                    </div>
+                <div className='menu'>
+                    <ul>
+                        <li>Community</li>
+                        <li>How to buy ?</li>
+                        <li>Tokenomics</li>
+                        <li>Airdrop</li>
+                    </ul>
+                </div>
 
-                    <div className='buttons'>
-                        <button>Buy now</button>
-                        <button>Connect wallet </button>
-                    </div>
-                </motion.div>
+                <div className='buttons'>
+                    <button>Buy now</button>
+                    <button>Connect wallet </button>
+                </div>
+            </motion.div>
 
         </>
     )
