@@ -1,0 +1,60 @@
+  .navbar{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-bottom:1px solid black;
+    height:68px;
+    padding-inline:2%;
+  }
+  .navbar p{
+    font-family:"Minecraft";
+    font-size:36px;
+    text-transform:uppercase;
+  }
+  .ceil{
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+  }
+  .ceil ul {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+    width:100%;
+    list-style:none;
+    grid-column-gap:4%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:15px;
+    text-transform:uppercase;
+  }
+  
+  .ceil ul li{
+    cursor: pointer;
+    transition:.1s;
+    font-size:13px;
+  
+  }
+  .buttons{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    grid-column-gap:2%;
+  }
+  .buttons button {
+    height:45px;
+    text-transform:uppercase;
+    padding:12px;
+    font-size:12px;
+  }
+  
+  .buttons button:nth-child(1){
+    background-color:black;
+    color:white;
+    cursor: pointer;
+    border:none;
+  }
+  .buttons button:nth-child(2){
+    background-color:transparent;
+    color:black;
+    border:1px solid black;
+    cursor: pointer;
+  }
