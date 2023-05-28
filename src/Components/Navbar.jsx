@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { FaBars } from "react-icons/fa"
 import { IoMdClose } from "react-icons/io"
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import './Navbar.css'
 
 export default function Navbar() {
