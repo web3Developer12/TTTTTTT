@@ -52,15 +52,17 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 2em;
+    gap: 3em;
     list-style: none;
     font-family: 'Courier New', Courier, monospace;
     text-transform: uppercase;
+    
 }
 
 .menu ul li {
     cursor: pointer;
     transition: .1s;
+    font-size:15px;
 }
 
 .buttons {
@@ -132,6 +134,6 @@
 
 @media screen and (min-width: 1200px) {
     .menu ul {
-        gap: 7em;
+        gap: 2em;
     }
 }

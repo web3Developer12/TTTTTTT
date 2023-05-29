@@ -1,38 +1,45 @@
 .hero {
-    opacity: 1;
-    background-image: linear-gradient(#e9e9e9 5px, transparent 5px), linear-gradient(to right, #e9e9e9 5px, #ffffff 5px);
-    background-size: 20px 20px;
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
     flex: 1 1 auto;
+    background:url('../assets/memesBg.jpg');
 }
 
 .hero-img {
     position: absolute;
     left: -9%;
     top: 2%;
+    display:none;
 }
 
 .hero-img-2 {
     position: absolute;
-    right: -8%;
+    right: -5%;
     top: 21%;
+    transform:rotate(-80deg);
+    transition:.3s;
+    cursor: pointer;
+    display:none;
 }
 
+.hero-img-2:hover{
+    right: -21%;
+}
 .card {
     border: 1px solid black;
     background-color: rgb(255, 255, 255);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    width: 552px;
-    height: 454px;
+    width: 482px;
+    height: 484px;
     position: absolute;
     left: 50%;
     top: 45%;
     transform: translate(-50%, -50%);
     overflow: hidden;
 }
+
 
 .card-header {
     background-color: rgb(0, 0, 0);
