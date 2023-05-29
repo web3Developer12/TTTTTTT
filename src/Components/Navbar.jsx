@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { FaBars } from "react-icons/fa"
 import { IoMdClose } from "react-icons/io"
 import { motion, AnimatePresence } from 'framer-motion';
-import './Navbar.css'
+import '../styles/Navbar.css'
 
 export default function Navbar() {
 
@@ -103,12 +103,8 @@ export default function Navbar() {
 
             }
 
-            <motion.div className='navbar'
-                layout
-                transition={{ layout: { duration: .4 } }}
-                style={{
-                    width: isOpen && "100%"
-                }}
+            <motion.div className={`navbar ${(!isOpen && screenSize < 700) ? "hide" : ""}`}
+                style={screenSize < 700 && { margin: isOpen ? "3em 0 1.5em" : "0" }}
             >
 
                 <div className='logo'>

@@ -16,7 +16,8 @@
     .navbar {
         flex-direction: column;
         gap: 3.5em;
-        width: 0;
+        flex: 0 0 25em;
+        transition: margin .5s ease, padding .5s ease, flex .5s ease, color .2s ease-in .3s;
     }
 
     .navbar .logo {
@@ -31,8 +32,14 @@
 .navbar {
     display: flex;
     justify-content: space-around;
-    margin-top: 4em;
     overflow: hidden;
+}
+
+.hide {
+    flex: 0 0 0;
+    padding: 0;
+    color: hsla(0, 0%, 0%, 0);
+    transition: color .2s ease, flex .5s ease .3s, margin .5s ease .3s, padding .5s ease .3s;
 }
 
 .navbar .logo p {
