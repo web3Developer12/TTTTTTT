@@ -1,15 +1,17 @@
 .Info{
-    display:grid;
-    grid-template-columns:1fr 44%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding-top:4%;
     padding-bottom:4%;
 
 }
+
 .ceil{
-    padding-inline:7%;
     display:flex;
     flex-direction:column;
     gap:1em;
+    flex: .3 1 20em;
 }
 
 .ceil .header{
@@ -22,13 +24,76 @@
     font-family: 'Courier New', Courier, monospace;
     text-align: justify;
 }
+
 .ceil-meme {
     display:flex;
     align-items:center;
     justify-content:center;
+    flex: .3 1 15em;
 }
-.ceil-meme .wrapper{
-    border:12px solid black;
-    border-radius:12px;
 
+.ceil-meme .wrapper{
+    border: 12px solid black;
+    border-radius: 12px;
+}
+
+.ceil-meme .wrapper img{
+    width: 420px;
+}
+
+@media screen and (max-width: 900px) {
+    .ceil {
+        flex: .3 1 15em;
+    }
+
+    .ceil-meme {
+        flex: .3 1 5em;
+    }
+
+    .ceil-meme .wrapper img{
+        width: 320px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .ceil {
+        flex: .3 1 15em;
+    }
+
+    .ceil .header{
+        font-size:46px;
+    }
+    
+    .ceil .sub{
+        font-size:16px;
+    }
+
+    .ceil-meme {
+        flex: .3 1 5em;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .Info {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .ceil, .ceil-meme {
+        flex: 0;
+    }
+
+    .ceil .sub{
+        margin: 0 3em;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .ceil .sub{
+        margin: 0 1.5em;
+    }
+    
+    .ceil-meme .wrapper img{
+        width: 280px;
+    }
 }
