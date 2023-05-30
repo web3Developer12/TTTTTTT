@@ -1,15 +1,8 @@
-import Riding from "./../assets/alone.png"
-import Yao from "./../assets/rage.png"
 
 const Hero = () => {
     return (
 
         <div className='hero'>
-
-            <img src={Riding} className='hero-img' width={522} />
-            <img src={Yao} className='hero-img-2' width={422} />
-
-
 
             <div className='card'>
 

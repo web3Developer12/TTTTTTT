@@ -1,7 +1,7 @@
 .BuyInfo {
     font-family: 'Courier New', Courier, monospace;
     text-align:center;
-    margin-top:10%;
+    margin-top:4%;
 }
 .BuyInfo .header{
     text-align:center;
@@ -27,7 +27,7 @@
 
 }
 .roadmap{
-    margin-top:10%;
+    margin-top:4;
 }
 
 .phase {
