@@ -1,0 +1,211 @@
+.hero {
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    overflow: hidden;
+    flex: 1 1 auto;
+    background:url('../assets/memesBg.jpg');
+}
+
+.hero-img {
+    position: absolute;
+    left: -9%;
+    top: 2%;
+    display:none;
+}
+
+.hero-img-2 {
+    position: absolute;
+    right: -5%;
+    top: 21%;
+    transform:rotate(-80deg);
+    transition:.3s;
+    cursor: pointer;
+    display:none;
+}
+
+.hero-img-2:hover{
+    right: -21%;
+}
+.card {
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(59, 59, 61, 0.2) 0px 7px 29px 0px;
+    width: 512px;
+    height: 530px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    border:6px solid rgb(0, 0, 0);
+    border-radius:12px;
+}
+
+
+.card-header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+.card-header-sale ul {
+    display: flex;
+    list-style: none;
+    column-gap: 7%;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.card-header-sale ul li {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 44px;
+    padding: 2%;
+    color: white;
+    font-weight:bolder;
+}
+
+.scroll-bar {
+    height: 28px;
+    width: 80%;
+    border-radius: 1px;
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    border: 1px solid white;
+}
+
+.stage {
+    position: absolute;
+    color: rgb(20, 8, 8);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    color: rgb(128, 128, 128);
+}
+
+.stage-loader {
+    background-color: rgb(255, 255, 255);
+    width: 10%;
+    height: 100%;
+}
+
+.card-footer {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: .5em;
+}
+
+.price {
+    font-size: 1.1em;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons-token {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+    margin-inline: 3%;
+    width: 80%;
+}
+
+.buttons-token button {
+    height: 35px;
+    width:100%;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: .1px solid black;
+}
+
+.buy-value {
+    width: 90%;
+    margin-inline: 3%;
+    font-size: 23px;
+    background-color: rgba(0, 0, 0, 0.055);
+    border: none;
+    padding: .4em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons-bottom {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7em;
+}
+
+.buttons-bottom button {
+    padding: 1em;
+    text-transform: uppercase;
+    background-color:rgb(0, 0, 0);
+    border:none;
+    color:white;
+    cursor: pointer;
+}
+
+.buttons-bottom button {
+    width: 100%;
+}
+
+@media screen and (max-width: 580px) {
+    .card {
+        width: 460px;
+    }
+
+    .card-header-sale ul li {
+        font-size: 35px;
+    }
+
+    .buttons-bottom {
+        width: 75%;
+    }
+    
+    .buttons-bottom button {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card {
+        width: 390px;
+    }
+
+    .card-header-sale ul li {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 330px;
+    }
+
+    .card-header-sale ul li {
+        font-size: 29px;
+    }
+
+    .card-header .card-header-msg {
+        font-size: 95%;
+    }
+
+    .card-header .payment-type, .card-header .stage {
+        font-size: 90%;
+    }
+}
