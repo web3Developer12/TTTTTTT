@@ -1,7 +1,7 @@
 .BuyInfo {
     font-family: 'Courier New', Courier, monospace;
     text-align:center;
-    margin-top:4%;
+    margin-top:10%;
 }
 .BuyInfo .header{
     text-align:center;
@@ -14,51 +14,88 @@
     gap:3em;
     margin-top:4%;
     margin-bottom:3%;
-
     margin-inline:5%;
 }
 
-.guide div{
+.guide div p{
     text-align:justify;
     border:8px solid black;
-    height:245px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    padding-top: 7%;
+    padding-bottom: 7%;
     padding-inline:5%;
     border-radius:12px;
 
 }
 .roadmap{
-    margin-top:4%;
-    margin-bottom:4%;
-
+    margin-top:10%;
 }
+
 .phase {
     display:grid;
     grid-template-columns:repeat(3,1fr);
     margin-top:2%;
     margin-inline:3%;
-    grid-column-gap:2%;
+    gap: 1em;
 }
 
 .phase div{
-    height:533px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:justify;
-    border:8px solid black;
+    text-align: justify;
+    border: 8px solid black;
+    padding-top: 3%;
+    padding-bottom: 3%;
     padding-inline:4%;
     border-radius:12px;
-    transition: .3s;
+    transition: .3s cubic-bezier(0.6, 0.01, 0.05, 0.95);
     background-color:black;
     color:white;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-
 .phase div:hover{
     background-color:rgb(255, 255, 255);
     color:rgb(0, 0, 0);
+}
+
+@media screen and (max-width: 800px) {
+    .phase {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .phase div:nth-child(3) {
+        grid-column: 2 span;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .guide {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .guide div:nth-child(3) {
+        grid-column: 2 span;
+    }
+
+    .BuyInfo .header {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .phase {
+        grid-template-columns: 1fr;
+    }
+
+    .phase div:nth-child(3) {
+        grid-column: 1;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .guide {
+        grid-template-columns: 1fr;
+    }
+    
+    .guide div:nth-child(3) {
+        grid-column: 1;
+    }
 }

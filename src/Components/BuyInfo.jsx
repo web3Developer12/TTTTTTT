@@ -9,15 +9,21 @@ export default function BuyInfo(){
         <div className='guide'>
 
             <div>
+                <p>
                 Send ETH or BNB to your wallet and ape in using your preferred chain. Use the presale widget above to swap for $WSM.
+            </p>
             </div>
 
             <div>
+            <p>
             You can also buy $WSM tokens with USDT (ERC-20 or BEP-20). Use the USDT option and swap your desired amount.
+            </p>
             </div>
 
             <div>
+            <p>
             Prefer plastic? No problem. Have your own crypto wallet address on hand and order $WSM tokens using your bank card.
+            </p>
             </div>
 
         </div>
