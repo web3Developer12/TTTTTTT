@@ -1,4 +1,5 @@
 import BuyInfo from './Components/BuyInfo'
+import Footer from './Components/Footer'
 import Hero from './Components/Hero'
 import Info from './Components/Info'
 import Navbar from './Components/Navbar'
@@ -14,6 +15,7 @@ function App() {
             <Info/>
             <BuyInfo/>
             <Tokenomics/>
+            <Footer/>
         </main>
     )
 }

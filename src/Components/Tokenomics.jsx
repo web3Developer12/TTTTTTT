@@ -1,4 +1,3 @@
-import '../styles/tokenomics.css'
 
 export default function Tokenomics() {
 

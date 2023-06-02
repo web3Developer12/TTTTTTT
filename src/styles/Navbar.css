@@ -42,7 +42,7 @@
     transition: color .2s ease, flex .5s ease .3s, margin .5s ease .3s, padding .5s ease .3s;
 }
 
-.navbar .logo p {
+.logo p {
     font-family: "Minecraft";
     font-size: 36px;
     text-transform: uppercase;

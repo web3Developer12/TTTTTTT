@@ -1,0 +1,37 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3em;
+    margin-top: 3%;
+    background-color: black;
+    color: white;
+    padding: 3em 3em 1.5em;
+}
+
+.infos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.msg {
+    font-size: 90%;
+    text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+    .infos {
+        flex-direction: column;
+        gap: 3em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    footer {
+        padding-left: .3em;
+        padding-right: .3em;
+    }
+}
