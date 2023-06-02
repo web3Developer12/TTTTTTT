@@ -10,6 +10,7 @@
 .menu-icons svg {
     width: 35px;
     height: auto;
+    margin: .1em;
 }
 
 @media screen and (max-width: 699px) {
