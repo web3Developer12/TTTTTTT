@@ -1,17 +1,19 @@
 .tokenomics{
     margin-top:3%;
 }
+
 .tokenomics .header{
     font-family: "Cartoon";
     text-align:center;
     font-size:43px;
     margin-bottom:1%;
 }
+
 .tokenomics .sub{
     font-family: 'Courier New', Courier, monospace;
     text-align:center;
+    margin: 0 1.5em;
     margin-bottom:2%;
-
 }
 
 .tokenomics .data{

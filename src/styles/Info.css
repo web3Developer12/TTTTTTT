@@ -84,14 +84,18 @@
         flex: 0;
     }
 
-    .ceil .sub{
+    .ceil {
         margin: 0 3em;
     }
 }
 
 @media screen and (max-width: 580px) {
-    .ceil .sub{
+    .ceil {
         margin: 0 1.5em;
+    }
+
+    .ceil .header {
+        font-size: 37px;
     }
     
     .ceil-meme .wrapper img{
