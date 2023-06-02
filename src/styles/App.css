@@ -8,6 +8,11 @@
     font-family: "Minecraft";
     src: url("../assets/fonts/Paskowy.ttf");
 }
+@font-face {
+    font-family: "Cartoon";
+    src: url("../assets/fonts/Mario-Kart-DS.ttf");
+}
+
 
 main.main-area {
     display: flex;

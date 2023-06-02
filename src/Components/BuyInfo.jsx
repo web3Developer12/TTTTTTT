@@ -29,7 +29,7 @@ export default function BuyInfo(){
         </div>
 
         <div className='roadmap'>
-            <p className='header'>Roadmap</p>
+            <p className='header'>ROADMAP</p>
             <p className='sub'>Hold on tight, folks! We're laying the foundation, launching to the moon, and empowering our community every step of the way. Together, we'll show the world that Wall Street Memes is here to stay. Let the hype begin! 💪🚀🌕</p>
 
             <div className='phase'>

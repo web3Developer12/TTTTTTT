@@ -4,7 +4,7 @@ export default function Info() {
     return <div className='Info'>
 
         <div className='ceil'>
-            <p className='header'>$SOYJ Token</p>
+            <p className='header'>..SOYJ - TOKEN</p>
             <p className='sub'>
                 The little guy challenged Wall Street in the infamous GameStop fiasco of 2021, and the legacy of those brave Wall Street Bets heroes endures until today.<br /><br />
 
